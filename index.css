@@ -2,15 +2,24 @@
 
 :root {
     --secondary-color: #780000;
+    --main-font: "Darumadrop One", serif;
 }
 
-html, bpdy {
+html, body {
     height: 100vh;
     width: 100vw;
-    font-family: "Darumadrop One", serif;
+    font-family: var(--main-font);
     font-weight: 400;
     font-style: normal;
+    min-width: 400px;
+}
+
+body {
     background-color: #ffc8dd;
+}
+
+img {
+    image-rendering: pixelated;
 }
 
 h1 {
@@ -25,14 +34,14 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .container img {
-    width: 50%;
+    width: 35%;
     height: auto;
     max-width: 400px;
     max-height: 400px;
-    image-rendering: pixelated;
 }
 
 .buttons-container {
@@ -53,7 +62,8 @@ h1 {
     background-color: red;
     color: white;
     height: 3rem;
-    font-family: "Darumadrop One", serif;
+    font-family: var(--main-font);
+    width: 5rem;
 }
 
 .buttons-container button:hover {
@@ -66,4 +76,32 @@ h1 {
     color: white;
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
+}
+
+.flowerPetals {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.flowerPetals img {
+    height: 100%;
+    width: 100%;
+}
+
+@media (1250px <= width) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (650px >= width) {
+    h1 {
+        font-size: 2rem;
+    }
+
 }

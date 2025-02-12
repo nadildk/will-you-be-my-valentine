@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+:root {
+    --secondary-color: #780000;
+}
+
+html, bpdy {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Darumadrop One", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffc8dd;
+}
+
+h1 {
+    color: red;
+    -webkit-text-stroke: 0.5px var(--secondary-color);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    width: 50%;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+    image-rendering: pixelated;
+}
+
+.buttons-container {
+    margin: 2rem;
+    display: grid;
+    width: 100%;
+    max-width: 200px;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+    text-align: center;
+}
+
+.buttons-container button {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 0.25rem;
+    border-color: var(--secondary-color);
+    background-color: red;
+    color: white;
+    height: 3rem;
+    font-family: "Darumadrop One", serif;
+}
+
+.buttons-container button:hover {
+    color: red;
+    background-color: white;
+    border-color: red;
+}
+
+.buttons-container button:active {
+    color: white;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}

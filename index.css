@@ -11,7 +11,7 @@ html, body {
     font-family: var(--main-font);
     font-weight: 400;
     font-style: normal;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 body {
@@ -103,5 +103,18 @@ h1 {
     h1 {
         font-size: 2rem;
     }
+}
 
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    .buttons-container {
+        width: 50%;
+    }
+
+    .buttons-container button {
+        width: 50px;
+    }
 }

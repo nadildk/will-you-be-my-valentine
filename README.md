@@ -6,7 +6,6 @@ If you want to ask someone to be your Valentine, this might be a cute way to do 
 
 # Live Link:
 
-https://will-u-be-my-valentine-snowy.vercel.app/
 
 # Installation
 1. Clone the Repository:
